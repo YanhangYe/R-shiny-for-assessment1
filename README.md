@@ -1,5 +1,5 @@
 # R-shiny-for-assessment1
-The data has been wrangled before so no need to read data in R processing
+# The data has been wrangled before so no need to read data in R processing
 
 #
 # This is a Shiny web application. You can run the application by clicking
@@ -7,7 +7,7 @@ The data has been wrangled before so no need to read data in R processing
 #
 # Find out more about building applications with Shiny here:
 #
-#    http://shiny.rstudio.com/
+#   http://shiny.rstudio.com/
 #
 
 library(shiny)
@@ -28,6 +28,7 @@ rownames(df) <- c('Firefox','Chrome','IE','Safari','iPad')
 colnames(df) <- c('0','1')
 
 # Define UI for application that draws a histogram
+
 ui <- fluidPage(
     fluidRow(
         titlePanel("userBrowser & Platform Distribution")
@@ -43,9 +44,8 @@ ui <- fluidPage(
     )
     
 )
-# Define server logic required to draw a chord diagram
-#server
 
+# Define server logic required to draw a chord diagram
 
 server <- function(input, output) {
     output$VIS1 <- renderPlot({
